@@ -4,7 +4,7 @@
 	xmlns:c="sap.ui.core" displayBlock="true" height="100%" busyIndicatorDelay="0">
 	<Page title="View 1">
 		<headerContent>
-			<Button text="Go To" press="onGoTo" icon="sap-icon://line-chart"></Button>
+			<Button text="Go To..." press="onGoTo" icon="sap-icon://line-chart"></Button>
 		</headerContent>
 		<SearchField id="idSearch" search="onSearch"></SearchField>
 		<List id="myList" items="{path: '/fruits', sorter: {path: 'name'}}" mode="SingleSelectMaster" selectionChange="onItemPress" delete="onDeleteItem">
