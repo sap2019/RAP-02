@@ -1,0 +1,64 @@
+<!-- This XML file does not appear to have any style information associated with it. The document tree is shown below. -->
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core" controllerName="emc2.hr.payroll.controller.View2">
+    <Page title="View 2 ==> {name}, {type}" showNavButton="true" navButtonPress="onBack">
+        <ObjectHeader intro="{healthBenefits}" title="{name}" number="{price}" numberUnit="{unit}" icon="{image}"/>
+        <IconTabBar>
+            <items>
+                <IconTabFilter icon="sap-icon://notes" text="More Info">
+                   <core:Fragment fragmentName="emc2.hr.payroll.fragments.moreInfo" type="XML"> </core:Fragment>
+
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://supplier" text="Suppliers">
+                    <Table items="{/suppliers}">
+                        <columns>
+                            <Column>
+                                <header>
+                                    <Label text="Name"/>
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Label text="City"/>
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Label text="Since When"/>
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Label text="Contact"/>
+                                </header>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{name}"/>
+                                    <Input value="{city}"/>
+                                    <Text text="{sinceWhen}"/>
+                                    <Text text="{contactPerson}"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://group" text="Cities">
+                   <core:Fragment fragmentName="emc2.hr.payroll.fragments.cities" type="XML"> </core:Fragment>
+
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button type="Accept" press="onSave" text="Save"/>
+                <Button type="Reject" press="onCancel" text="Cancel"/>
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>

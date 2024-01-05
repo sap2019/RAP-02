@@ -1,0 +1,55 @@
+<mvc:View controllerName="emc2.hr.payroll.controller.View1"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core" displayBlock="true" height="100%" busyIndicatorDelay="0">
+	<Page title="View 1">
+		<headerContent>
+			<Button text="Go To" press="onGoTo" icon="sap-icon://line-chart"></Button>
+		</headerContent>
+		<SearchField id="idSearch" search="onSearch"></SearchField>
+		<List id="myList" items="{path: '/fruits', sorter: {path: 'name'}}" mode="SingleSelectMaster" selectionChange="onItemPress" delete="onDeleteItem">
+			<items>
+				<ObjectListItem type="Navigation" title="{name}" intro="{type}" number="{price}" numberUnit="{unit}" icon="{image}">
+				</ObjectListItem>
+			</items>
+			<!-- <items>
+				<DisplayListItem label="Apple" value="Best Antibiotic in the world"></DisplayListItem>
+				<StandardListItem title="Pineapple" description="Best source of vitamin C" icon="https://yogisorganic.com/cdn/shop/products/Pineapple_600x@2x.jpg?v=1496866405"></StandardListItem>
+				<InputListItem >
+					<content>
+						<HBox >
+							<Label class="sapUISmallMarginTop" text="How many mangoes you want to order?">
+							</Label>
+							<Input class="sapUISmallMarginBegin">
+							</Input>
+						</HBox>
+
+					</content>
+				</InputListItem>
+				<CustomListItem>
+					<content>
+						<HBox alignContent="Start">
+							<Label class="sapUiSmallMarginTop" text="Would you like to have Cash on Delivery"/>
+							<Switch/>
+						</HBox>
+					</content>
+				</CustomListItem>
+				 Used to display the business object 
+				<ObjectListItem title="Banana" intro="Best source of potasium for human body" number="20" numberUnit="Kg." icon="https://img.freepik.com/free-vector/sticker-design-with-banana-isolated_1308-77292.jpg">
+					<attributes>
+						<ObjectAttribute title="Color" text="Green Yellow"/>
+						<ObjectAttribute title="Type" text="Fiber Rich"/>
+					</attributes>
+					<firstStatus>
+						<ObjectStatus text="Available" state="Success"/>
+					</firstStatus>
+				</ObjectListItem>
+				<FeedListItem text="Howdee Anubhav!" timestamp="31st Dec 2023" sender="Joe Biden" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/640px-Joe_Biden_presidential_portrait.jpg"/>
+				 If you want to create clickable list items 
+				<ActionListItem text="Order Now!" press="onGoTo"/> -->
+
+		</List>
+
+	</Page>
+
+</mvc:View>

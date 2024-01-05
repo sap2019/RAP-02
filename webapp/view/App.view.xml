@@ -1,0 +1,13 @@
+<mvc:View
+	controllerName="emc2.hr.payroll.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0">
+    <!-- <Text text="This is my root view"/> -->
+  
+    <SplitApp  id="idAppCon"/>
+
+</mvc:View>

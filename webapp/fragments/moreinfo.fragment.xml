@@ -1,0 +1,16 @@
+<c:FragmentDefinition xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <f:SimpleForm>
+        <f:content>
+            <Label text="Name"/>
+            <Text text="{name}"/>
+            <Label text="Type"/>
+            <Text text="{type}"/>
+            <Label text="Color"/>
+            <Text text="{Color}"/>
+            <Label text="Status"/>
+            <ObjectStatus text="{status}" state="{ path: 'status', formatter: '.formatter.getState' }"/>
+        </f:content>
+    </f:SimpleForm>
+</c:FragmentDefinition>
